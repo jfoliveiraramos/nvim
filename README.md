@@ -21,4 +21,4 @@
 | `J` | Visual | Drags downwards selected text, while in Visual Mode |    
 | `K` | Visual | Drags upwards selected text, while in Visual Mode |    
 | `Space s` | Normal | Substitute all words matching the cursor position |
-| `Space x` | Normal | Make the currentfile an executable | 
+| `Space x` | Normal | Make the current file an executable | 
