@@ -4,7 +4,7 @@
 
 | Key | Mode | Action |
 | --- | ---- | ------ |
-| `Space` | Normal | _<Leader>_ |
+| `Space` | Normal | _Leader_ |
 | `Space p v` | Normal | Open NeoVim explorer |
 | `Space p f` | Normal | Open Telescope |
 | `Space o` | Normal | Insert line below, remains in Normal Mode |
