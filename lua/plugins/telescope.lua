@@ -10,5 +10,8 @@ return {
                 desc = "Find Plugin File",
             },
         },
+        find_files = {
+            hidden = true,
+        },
     },
 }
