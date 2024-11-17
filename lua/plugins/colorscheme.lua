@@ -1,10 +1,11 @@
 return {
     {
         "catppuccin/nvim",
-        lazy = true,
+        lazy = false,
         name = "catppuccin",
         opts = {
-            transparent_background = true,
+            flavour = "latte",
+            -- transparent_background = true,
             integrations = {
                 aerial = true,
                 alpha = true,
