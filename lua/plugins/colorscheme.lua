@@ -1,5 +1,28 @@
 return {
     {
+        "LazyVim/LazyVim",
+        opts = {
+            colorscheme = "nordic",
+        },
+    },
+    {
+        "AlexvZyl/nordic.nvim",
+        lazy = false,
+        priority = 1000,
+        opts = {
+            transparent = {
+                bg = true,
+            },
+        },
+    },
+    {
+        "rebelot/kanagawa.nvim",
+        lazy = false,
+        config = function()
+            -- local kanagawa = require("kanagawa")
+        end,
+    },
+    {
         "catppuccin/nvim",
         lazy = false,
         name = "catppuccin",
@@ -41,12 +64,6 @@ return {
                 treesitter_context = true,
                 which_key = true,
             },
-        },
-    },
-    {
-        "LazyVim/LazyVim",
-        opts = {
-            colorscheme = "catppuccin",
         },
     },
 }
