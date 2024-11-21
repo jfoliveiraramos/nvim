@@ -29,3 +29,5 @@ vim.keymap.set("n", "<C-a>", "ggVG")
 vim.keymap.set("n", "<C-S-a>", "ggVG=")
 vim.keymap.set("i", "jk", "<ESC>", { silent = true })
 vim.keymap.set("i", "<C-+>", "<ESC>", { silent = true })
+
+vim.keymap.set("n", "<leader>t", ":terminal<CR>")
