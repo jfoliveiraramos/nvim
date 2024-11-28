@@ -13,6 +13,11 @@ return {
             transparent = {
                 bg = true,
             },
+            on_highlight = function(highlights, _)
+                highlights.Visual = vim.tbl_extend("force", highlights.Visual or {}, {
+                    italic = true,
+                })
+            end,
         },
     },
     {

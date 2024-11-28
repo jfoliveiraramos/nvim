@@ -4,15 +4,15 @@ return {
         event = "LazyFile",
         opts = {
             diagnostics = {
-                virtual_text = false,
+                virtual_text = true,
                 update_in_insert = false,
             },
         },
     },
-    {
-        "ErichDonGubler/lsp_lines.nvim",
-        config = function()
-            require("lsp_lines").setup()
-        end,
-    },
+    -- {
+    --     "ErichDonGubler/lsp_lines.nvim",
+    --     config = function()
+    --         require("lsp_lines").setup()
+    --     end,
+    -- },
 }
