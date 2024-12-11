@@ -1,10 +1,4 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", function()
-    vim.cmd("Ex")
-end)
-
-vim.keymap.set("n", "<leader>o", "o<Esc>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>O", "O<Esc>", { noremap = true, silent = true })
 
 vim.keymap.set("n", "U", "<C-r>", { noremap = true, silent = true })
 
@@ -13,21 +7,16 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
-vim.keymap.set({ "n", "x" }, "<leader>p", [["0p]], { desc = "paste from yank register" })
-
-vim.keymap.set("n", "<leader>y", '"+y')
-vim.keymap.set("v", "<leader>y", '"+y')
-vim.keymap.set("n", "<leader>Y", '"+Y')
+vim.keymap.set({ "n", "x" }, "<leader>p", [["0p]], { desc = "Paste from yank register" })
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
 vim.keymap.set("n", "<C-f>", "/")
-vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
-vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+
+vim.keymap.set("n", "<leader>fx", "<cmd>!chmod +x %<CR>", { desc = "Make current file executable", silent = true })
 
 vim.keymap.set("n", "<C-a>", "ggVG")
-vim.keymap.set("n", "<C-S-a>", "ggVG=")
 vim.keymap.set("i", "jk", "<ESC>", { silent = true })
 vim.keymap.set("i", "<C-+>", "<ESC>", { silent = true })
-
-vim.keymap.set("n", "<leader>t", ":terminal<CR>")
+vim.keymap.set("n", "<C-+>", "<ESC>", { silent = true })

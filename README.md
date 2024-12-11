@@ -17,8 +17,8 @@
 | `Ctrl + f` | Normal | Search document |
 | `n` | Normal | Iterate forward search results with vertically centered cursor |
 | `N` | Normal | Iterate backwards search results with vertically centered cursor |
-| `Space y` | Normal | Copy/Yank to clipboard |    
-| `J` | Visual | Drags downwards selected text, while in Visual Mode |    
-| `K` | Visual | Drags upwards selected text, while in Visual Mode |    
+| `Space y` | Normal | Copy/Yank to clipboard |
+| `J` | Visual | Drags downwards selected text, while in Visual Mode |
+| `K` | Visual | Drags upwards selected text, while in Visual Mode |
 | `Space s` | Normal | Substitute all words matching the cursor position |
-| `Space x` | Normal | Make the current file an executable | 
+| `Space x` | Normal | Make the current file an executable |
