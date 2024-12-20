@@ -1,8 +1,7 @@
 local function readHeader()
-    local filename = "header.txt"
+    local filename = vim.fn.stdpath("config") .. "/header.txt"
     local file = io.open(filename, "r")
     if not file then
-        print("Error: Unable to open file " .. filename)
         return nil
     end
     local content = file:read("*all")
