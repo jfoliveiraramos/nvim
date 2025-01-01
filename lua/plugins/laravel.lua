@@ -1,6 +1,6 @@
 return {
     {
-        'kevinhwang91/promise-async'
+        "kevinhwang91/promise-async",
     },
     {
         -- Add a Treesitter parser for Laravel Blade to provide Blade syntax highlighting.

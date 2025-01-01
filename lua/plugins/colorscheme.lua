@@ -6,6 +6,9 @@ return {
         },
     },
     {
+        "shaunsingh/nord.nvim",
+    },
+    {
         "AlexvZyl/nordic.nvim",
         lazy = false,
         priority = 1000,

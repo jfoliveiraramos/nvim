@@ -20,3 +20,8 @@ vim.keymap.set("n", "<C-a>", "ggVG")
 vim.keymap.set("i", "jk", "<ESC>", { silent = true })
 vim.keymap.set("i", "<C-+>", "<ESC>", { silent = true })
 vim.keymap.set("n", "<C-+>", "<ESC>", { silent = true })
+
+vim.keymap.set("n", "<C-h>", "<Cmd>TmuxNavigateLeft<CR>", {})
+vim.keymap.set("n", "<C-j>", "<Cmd>TmuxNavigateDown<CR>", {})
+vim.keymap.set("n", "<C-k>", "<Cmd>TmuxNavigateUp<CR>", {})
+vim.keymap.set("n", "<C-l>", "<Cmd>TmuxNavigateRight<CR>", {})
