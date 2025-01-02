@@ -8,7 +8,6 @@ local function readHeader()
     file:close()
     return content
 end
-
 return {
 
     {
@@ -44,8 +43,8 @@ return {
                             action = ":lua Snacks.dashboard.pick('files', {cwd = vim.fn.stdpath('config')})",
                         },
                         { icon = " ", key = "s", desc = "Restore Session", section = "session" },
-                        { icon = " ", key = "x", desc = "Lazy Extras", action = ":LazyExtras" },
-                        { icon = "󰒲 ", key = "l", desc = "Lazy", action = ":Lazy" },
+                        { icon = " ", key = "p", desc = "Plugins", action = ":Lazy" },
+                        { icon = " ", key = "x", desc = "Extras", action = ":LazyExtras" },
                         { icon = " ", key = "q", desc = "Quit", action = ":qa" },
                     },
                 },
