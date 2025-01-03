@@ -7,3 +7,5 @@ foo.*
 *.log
 data
 header.txt
+
+lua/plugins/presence.lua
