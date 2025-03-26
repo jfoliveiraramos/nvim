@@ -9,3 +9,4 @@ data
 header.txt
 
 lua/plugins/presence.lua
+lazy-lock.json
