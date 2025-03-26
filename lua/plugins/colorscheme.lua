@@ -19,6 +19,8 @@ return {
             on_highlight = function(highlights, _)
                 highlights.Visual = vim.tbl_extend("force", highlights.Visual or {}, {
                     italic = true,
+                    bg = "#dcdcdc",
+                    fg = "#000000",
                 })
             end,
         },

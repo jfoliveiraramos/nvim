@@ -50,11 +50,11 @@ return {
                 },
             },
             scroll = {
-                enabled = false,
-                -- animate = {
-                --     duration = { step = 5, total = 250 },
-                --     easing = "linear",
-                -- },
+                enabled = true,
+                animate = {
+                    duration = { step = 10, total = 100 },
+                    easing = "linear",
+                },
             },
         },
     },

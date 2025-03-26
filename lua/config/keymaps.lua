@@ -4,8 +4,14 @@ vim.keymap.set("n", "U", "<C-r>", { noremap = true, silent = true })
 
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("v", "<C-u>", "<C-u>zz")
+vim.keymap.set("v", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
+vim.keymap.set("n", "<C-n>", "10jzz", { noremap = true, silent = true })
+vim.keymap.set("n", "<C-p>", "10kzz", { noremap = true, silent = true })
+vim.keymap.set("v", "<C-n>", "10jzz", { noremap = true, silent = true })
+vim.keymap.set("v", "<C-p>", "10kzz", { noremap = true, silent = true })
 
 vim.keymap.set({ "n", "x" }, "<leader> <S-p>", [["0p]], { desc = "Paste from yank register" })
 
