@@ -5,6 +5,7 @@ return {
             local opts = {
                 formatters_by_ft = {
                     lua = { "stylua" },
+                    rust = { "rustfmt" },
                     fish = { "fish_indent" },
                     sh = { "shfmt" },
                     php = { "pint", "php_cs_fixer" },
