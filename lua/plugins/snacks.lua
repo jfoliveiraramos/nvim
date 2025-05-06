@@ -15,7 +15,7 @@ return {
         opts = {
             dashboard = {
                 preset = {
-                    header = readHeader(),
+                    -- header = readHeader(),
                     keys = {
                         {
                             icon = " ",
