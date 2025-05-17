@@ -6,7 +6,6 @@ debug
 foo.*
 *.log
 data
-header.txt
 
 lua/plugins/presence.lua
 lazy-lock.json
