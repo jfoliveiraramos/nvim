@@ -14,6 +14,7 @@ return {
                     typescript = { "prettier", "eslint" },
                     javascriptreact = { "prettier", "eslint" },
                     typescriptreact = { "prettier", "eslint" },
+                    svelte = { "prettier", "eslint" },
                 },
                 formatters = {
                     pint = {
