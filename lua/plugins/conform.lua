@@ -15,6 +15,9 @@ return {
                     javascriptreact = { "prettier", "eslint" },
                     typescriptreact = { "prettier", "eslint" },
                     svelte = { "prettier", "eslint" },
+                    go = { "gofmt" },
+                    json = { "prettier" },
+                    yaml = { "prettier" },
                 },
                 formatters = {
                     pint = {
