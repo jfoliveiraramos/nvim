@@ -18,6 +18,7 @@ return {
                     go = { "gofmt" },
                     json = { "prettier" },
                     yaml = { "prettier" },
+                    python = { "ruff_organize_imports", "ruff_format" },
                 },
                 formatters = {
                     pint = {
