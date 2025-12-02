@@ -20,14 +20,33 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 vim.keymap.set("n", "<C-f>", "/")
 
+vim.keymap.set("n", "<leader><C-e>", function()
+    vim.cmd("Neotree reveal reveal_force_cwd")
+end, { desc = "Explorer NeoTree: (expand)", silent = true })
+
 vim.keymap.set("n", "<leader>fx", "<cmd>!chmod +x %<CR>", { desc = "Make current file executable", silent = true })
+
+vim.keymap.set("n", "<leader>fy", function()
+    local path = vim.fn.expand("%:p")
+    if path ~= "" then
+        vim.fn.setreg("+", path)
+        vim.notify("Copied: " .. path)
+    else
+        vim.notify("No file path to copy", vim.log.levels.WARN)
+    end
+end, { desc = "Copy current file path", silent = true })
+
+vim.keymap.set("n", "<leader>fY", function()
+    local parent_path = vim.fn.expand("%:p:h")
+    if parent_path ~= "" then
+        vim.fn.setreg("+", parent_path)
+        vim.notify("Copied parent directory path: " .. parent_path)
+    else
+        vim.notify("No parent directory path to copy", vim.log.levels.WARN)
+    end
+end, { desc = "Copy parent directory path", silent = true })
 
 vim.keymap.set("n", "<C-a>", "ggVG")
 vim.keymap.set("i", "jk", "<ESC>", { silent = true })
 vim.keymap.set("i", "<C-+>", "<ESC>", { silent = true })
 vim.keymap.set("n", "<C-+>", "<ESC>", { silent = true })
-
-vim.keymap.set("n", "<C-h>", "<Cmd>TmuxNavigateLeft<CR>", {})
-vim.keymap.set("n", "<C-j>", "<Cmd>TmuxNavigateDown<CR>", {})
-vim.keymap.set("n", "<C-k>", "<Cmd>TmuxNavigateUp<CR>", {})
-vim.keymap.set("n", "<C-l>", "<Cmd>TmuxNavigateRight<CR>", {})
