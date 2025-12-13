@@ -6,9 +6,6 @@ return {
             diagnostics = {
                 virtual_text = true,
                 update_in_insert = true,
-                float = {
-                    border = "rounded",
-                },
             },
         },
     },
