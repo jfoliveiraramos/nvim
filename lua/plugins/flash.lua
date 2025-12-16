@@ -8,6 +8,10 @@ return {
             search = {
                 enabled = true,
             },
+            char = {
+                enabled = true,
+                -- jump_labels = true,
+            },
         },
     },
   -- stylua: ignore
