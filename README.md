@@ -5,20 +5,44 @@
 | Key | Mode | Action |
 | --- | ---- | ------ |
 | `Space` | Normal | _Leader_ |
-| `Space p v` | Normal | Open NeoVim explorer |
-| `Space p f` | Normal | Open Telescope |
-| `Space o` | Normal | Insert line below, remains in Normal Mode |
-| `Space O` | Normal | Insert line above, remains in Normal Mode |
+| `jk` | Insert | Go back to Normal Mode |
 | `U` | Normal | Undo "undo" action |
-| `Ctrl + a` | Normal | Select entire document |
-| `Shift + Tab` | Normal | Format indentation |
+| `Ctrl + y` | Normal | Yank all contents of current buffer |
 | `Ctrl + u` | Normal | Half-Page backwards with vertically centered cursor |
 | `Ctrl + d` | Normal | Half-Page forward with vertically centered cursor |
-| `Ctrl + f` | Normal | Search document |
 | `n` | Normal | Iterate forward search results with vertically centered cursor |
 | `N` | Normal | Iterate backwards search results with vertically centered cursor |
-| `Space y` | Normal | Copy/Yank to clipboard |
 | `J` | Visual | Drags downwards selected text, while in Visual Mode |
 | `K` | Visual | Drags upwards selected text, while in Visual Mode |
-| `Space s` | Normal | Substitute all words matching the cursor position |
-| `Space x` | Normal | Make the current file an executable |
+| `y` | Normal / Visual | Yank Text |
+| `p` | Normal / Visual | Put Text After Cursor |
+| `P` | Normal / Visual | Put Text Before Cursor |
+| `gp` | Normal / Visual | Put Text After Selection |
+| `gP` | Normal / Visual | Put Text Before Selection |
+| `[y` | Normal | Cycle Forward Through Yank History |
+| `]y` | Normal | Cycle Backward Through Yank History |
+| `s` | Normal / Visual / Operator | Flash |
+| `S` | Normal / Visual / Operator | Flash Treesitter |
+| `Ctrl + h` | Normal | Navigate left |
+| `Ctrl + j` | Normal | Navigate down |
+| `Ctrl + k` | Normal | Navigate up |
+| `Ctrl + l` | Normal | Navigate right |
+| `Space <S-p>` | Normal / Visual | Paste from yank register |
+| `Space h` | Normal | Harpoon quick menu |
+| `Space H` | Normal | Harpoon file |
+| `Space [4-10]` | Normal | Harpoon to file \[1-10\] |
+| `Space pf` | Normal | Find Files (cwd) |
+| `Space pF` | Normal | Find Files (Root Dir) |
+| `Space pr` | Normal | Recent (cwd) |
+| `Space pR` | Normal | Recent |
+| `Space fx` | Normal | Make current file executable |
+| `Space fy` | Normal | Copy current file path |
+| `Space fY` | Normal | Copy parent directory path |
+| `Space un` | Normal | Delete all Notifications |
+| `Space y` | Normal / Visual | Open Yank History |
+| `gsa` | Normal / Visual | Add Surrounding |
+| `gsd` | Normal | Delete Surrounding |
+| `gsf` | Normal | Find Right Surrounding |
+| `gsF` | Normal | Find Left Surrounding |
+| `gsh` | Normal | Highlight Surrounding |
+| `gsr` | Normal | Replace Surrounding |
