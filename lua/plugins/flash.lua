@@ -8,8 +8,8 @@ return {
                 enabled = false,
             },
             char = {
-                enabled = false,
-                jump_labels = true,
+                enabled = true,
+                jump_labels = false,
             },
         },
     },
