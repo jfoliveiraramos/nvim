@@ -5,6 +5,8 @@ return {
             local util = require("conform.util")
             local opts = {
                 formatters_by_ft = {
+                    c = { "clang-format" },
+                    cpp = { "clang-format" },
                     zig = { "zig_fmt" },
                     python = { "ruff_organize_imports", "ruff_format", "mypy" },
                     lua = { "stylua" },
