@@ -5,6 +5,10 @@ return {
             local util = require("conform.util")
             local opts = {
                 formatters_by_ft = {
+                    c = { "clang_format" },
+                    cpp = { "clang_format" },
+                    h = { "clang_format" },
+                    hpp = { "clang_format" },
                     zig = { "zig_fmt" },
                     python = { "ruff_organize_imports", "ruff_format", "mypy" },
                     lua = { "stylua" },
@@ -20,6 +24,7 @@ return {
                     go = { "gofmt" },
                     json = { "prettier" },
                     yaml = { "prettier" },
+                    toml = { "taplo" },
                 },
                 formatters = {
                     pint = {
